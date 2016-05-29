@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>折角元素</title>
+    <style>
+.note {
+position: relative;
+background: #58a; /* Fallback */
+background:
+linear-gradient(-150deg,
+transparent 1.5em, #58a 0);
+border-radius: .5em;
+width: 120px;
+height: 120px;
+transform:rotate(9deg);
+-ms-transform:rotate(9deg); /* Internet Explorer */
+-moz-transform:rotate(9deg); /* Firefox */
+-webkit-transform:rotate(9deg); /* Safari 和 Chrome */
+-o-transform:rotate(9deg); /* Opera */
+float: left;
+color: #fff;
+text-align: center;
+line-height: 120px;
+}
+.note::before {
+content: '';
+position: absolute;
+top: 0; right: 0;
+background: linear-gradient(to left bottom,
+transparent 50%, rgba(0,0,0,.2) 0, rgba(0,0,0,.4))
+100% 0 no-repeat;
+width: 1.73em;
+height: 3em;
+transform: translateY(-1.3em) rotate(-30deg);
+transform-origin: bottom right;
+border-bottom-left-radius: inherit;
+box-shadow: -.2em .2em .3em -.1em rgba(0,0,0,.15);
+}
+    </style>
+</head>
+<body>
+    <div class="note">
+        
+    </div>
+</body>
+</html>
